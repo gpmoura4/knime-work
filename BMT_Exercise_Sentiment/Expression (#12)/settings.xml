@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns="http://www.knime.org/2008/09/XMLConfig" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.knime.org/2008/09/XMLConfig http://www.knime.org/XMLConfig_2008_09.xsd" key="settings.xml">
+    <entry key="node_file" type="xstring" value="settings.xml"/>
+    <config key="flow_stack"/>
+    <config key="internal_node_subsettings">
+        <entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
+    </config>
+    <config key="model">
+        <entry key="script" type="xstring" value="# Write a row-wise expression, e.g.%%00010#   if($[&quot;sales&quot;] &gt; 1000, &quot;High&quot;, &quot;Low&quot;)%%00010# See node description for full syntax%%00010%%00010regex_replace(%%00010  regex_replace(%%00010    regex_replace($[&quot;Comment&quot;], &quot;\\b(a|about|above|after|again|against|all|am|an|and|any|are|aren't|as|at|be|because|been|before|being|below|between|both|but|by|can't|cannot|could|couldn't|did|didn't|do|does|doesn't|doing|don't|down|during|each|few|for|from|further|had|hadn't|has|hasn't|have|haven't|having|he|he'd|he'll|he's|her|here|here's|hers|herself|him|himself|his|how|how's|i|i'd|i'll|i'm|i've|if|in|into|is|isn't|it|it's|its|itself|let's|me|more|most|mustn't|my|myself|no|nor|not|of|off|on|once|only|or|other|ought|our|ours|ourselves|out|over|own|same|shan't|she|she'd|she'll|she's|should|shouldn't|so|some|such|than|that|that's|the|their|theirs|them|themselves|then|there|there's|these|they|they'd|they'll|they're|they've|this|those|through|to|too|under|until|up|very|was|wasn't|we|we'd|we'll|we're|we've|were|weren't|what|what's|when|when's|where|where's|which|while|who|who's|whom|why|why's|with|won't|would|wouldn't|you|you'd|you'll|you're|you've|your|yours|yourself|yourselves|able|abst|accordance|according|accordingly|across|act|actually|added|adj|affected|affecting|affects|afterwards|ah|almost|alone|along|already|also|although|always|among|amongst|announce|another|anybody|anyhow|anymore|anyone|anything|anyway|anyways|anywhere|apparently|approximately|aren|arent|arise|around|aside|ask|asking|auth|available|away|awfully|b|back|became|become|becomes|becoming|beforehand|begin|beginning|beginnings|begins|behind|believe|beside|besides|beyond|biol|brief|briefly|c|ca|came|can|cause|causes|certain|certainly|co|com|come|comes|contain|containing|contains|couldnt|d|date|different|done|downwards|due|e|ed|edu|effect|eg|eight|eighty|either|else|elsewhere|end|ending|enough|especially|et|et-al|etc|even|ever|every|everybody|everyone|everything|everywhere|ex|except|f|far|ff|fifth|first|five|fix|followed|following|follows|former|formerly|forth|found|four|furthermore|g|gave|get|gets|getting|give|given|gives|giving|go|goes|gone|got|gotten|h|happens|hardly|hed|hence|hereafter|hereby|herein|heres|hereupon|hes|hi|hid|hither|home|howbeit|however|hundred|id|ie|im|immediate|immediately|importance|important|inc|indeed|index|information|instead|invention|inward|itd|it'll|j|just|k|keep|keeps|kept|kg|km|know|known|knows|l|largely|last|lately|later|latter|latterly|least|less|lest|let|lets|like|liked|likely|line|little|'ll|look|looking|looks|ltd|m|made|mainly|make|makes|many|may|maybe|mean|means|meantime|meanwhile|merely|mg|might|million|miss|ml|moreover|mostly|mr|mrs|much|mug|must|n|na|name|namely|nay|nd|near|nearly|necessarily|necessary|need|needs|neither|never|nevertheless|new|next|nine|ninety|nobody|non|none|nonetheless|noone|normally|nos|noted|nothing|now|nowhere|o|obtain|obtained|obviously|often|oh|ok|okay|old|omitted|one|ones|onto|ord|others|otherwise|outside|overall|owing|p|page|pages|part|particular|particularly|past|per|perhaps|placed|please|plus|poorly|possible|possibly|potentially|pp|predominantly|present|previously|primarily|probably|promptly|proud|provides|put|q|que|quickly|quite|qv|r|ran|rather|rd|re|readily|really|recent|recently|ref|refs|regarding|regardless|regards|related|relatively|research|respectively|resulted|resulting|results|right|run|s|said|saw|say|saying|says|sec|section|see|seeing|seem|seemed|seeming|seems|seen|self|selves|sent|seven|several|shall|shed|shes|show|showed|shown|showns|shows|significant|significantly|similar|similarly|since|six|slightly|somebody|somehow|someone|somethan|something|sometime|sometimes|somewhat|somewhere|soon|sorry|specifically|specified|specify|specifying|still|stop|strongly|sub|substantially|successfully|sufficiently|suggest|sup|sure|t|take|taken|taking|tell|tends|th|thank|thanks|thanx|that'll|thats|that've|thence|thereafter|thereby|thered|therefore|therein|there'll|thereof|therere|theres|thereto|thereupon|there've|theyd|theyre|think|thou|though|thoughh|thousand|throug|throughout|thru|thus|til|tip|together|took|toward|towards|tried|tries|truly|try|trying|ts|twice|two|u|un|unfortunately|unless|unlike|unlikely|unto|upon|ups|us|use|used|useful|usefully|usefulness|uses|using|usually|v|value|various|'ve|via|viz|vol|vols|vs|w|want|wants|wasnt|way|wed|welcome|went|werent|whatever|what'll|whats|whence|whenever|whereafter|whereas|whereby|wherein|wheres|whereupon|wherever|whether|whim|whither|whod|whoever|whole|who'll|whomever|whos|whose|widely|willing|wish|within|without|wont|words|world|wouldnt|www|x|y|yes|yet|youd|youre|z|zero)\\b&quot;, &quot;&quot;),%%00010    &quot;[^\\w\\s]&quot;,%%00010    &quot; &quot;%%00010  ),%%00010  &quot;\\s+&quot;,%%00010  &quot; &quot;%%00010)"/>
+        <entry key="columnOutputMode" type="xstring" value="REPLACE_EXISTING"/>
+        <entry key="createdColumn" type="xstring" value="New Column"/>
+        <entry key="replacedColumn" type="xstring" value="Comment"/>
+        <entry key="languageVersion" type="xint" value="1"/>
+        <entry key="builtinFunctionsVersion" type="xint" value="1"/>
+        <entry key="builtinAggregationsVersion" type="xint" value="1"/>
+        <config key="additionalExpressions"/>
+    </config>
+    <config key="variables"/>
+    <config key="nodeAnnotation">
+        <entry key="text" type="xstring" value="REGEX P/ LIMPAR  WORDS"/>
+        <entry key="contentType" type="xstring" value="text/plain"/>
+        <entry key="bgcolor" type="xint" value="16777215"/>
+        <entry key="x-coordinate" type="xint" value="0"/>
+        <entry key="y-coordinate" type="xint" value="0"/>
+        <entry key="width" type="xint" value="0"/>
+        <entry key="height" type="xint" value="0"/>
+        <entry key="alignment" type="xstring" value="CENTER"/>
+        <entry key="borderSize" type="xint" value="0"/>
+        <entry key="borderColor" type="xint" value="0"/>
+        <entry key="defFontSize" type="xint" value="-1"/>
+        <entry key="annotation-version" type="xint" value="20230412"/>
+        <config key="styles"/>
+    </config>
+    <entry key="customDescription" type="xstring" isnull="true" value=""/>
+    <entry key="state" type="xstring" value="EXECUTED"/>
+    <entry key="factory" type="xstring" value="org.knime.base.expressions.node.row.mapper.ExpressionRowMapperNodeFactory"/>
+    <entry key="node-name" type="xstring" value="Expression"/>
+    <entry key="node-bundle-name" type="xstring" value="KNIME Base Expressions"/>
+    <entry key="node-bundle-symbolic-name" type="xstring" value="org.knime.base.expressions"/>
+    <entry key="node-bundle-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
+    <entry key="node-bundle-version" type="xstring" value="5.11.0.v202602211516"/>
+    <entry key="node-feature-name" type="xstring" value="KNIME Expressions"/>
+    <entry key="node-feature-symbolic-name" type="xstring" value="org.knime.features.base.expressions.feature.group"/>
+    <entry key="node-feature-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
+    <entry key="node-feature-version" type="xstring" value="5.11.0.v202602211516"/>
+    <config key="factory_settings"/>
+    <entry key="name" type="xstring" value="Expression"/>
+    <entry key="hasContent" type="xboolean" value="true"/>
+    <entry key="isInactive" type="xboolean" value="false"/>
+    <config key="ports">
+        <config key="port_1">
+            <entry key="index" type="xint" value="1"/>
+            <entry key="port_spec_class" type="xstring" value="org.knime.core.data.DataTableSpec"/>
+            <entry key="port_object_class" type="xstring" value="org.knime.core.node.BufferedDataTable"/>
+            <entry key="port_object_summary" type="xstring" value="Rows: 2747, Cols: 2"/>
+            <entry key="port_dir_location" type="xstring" value="port_1"/>
+        </config>
+    </config>
+    <config key="filestores">
+        <entry key="file_store_location" type="xstring" isnull="true" value=""/>
+        <entry key="file_store_id" type="xstring" value="398dc4de-0313-4e05-879d-4bafc2f9e225"/>
+    </config>
+</config>
